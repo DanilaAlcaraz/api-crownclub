@@ -22,7 +22,7 @@ SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
 def read_root():
     return {"mensaje": "API de Crown Club funcionando 👑"}
 
-@app.get("/products")
+@app.get("/productos")
 def get_productos():
     try:
         supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
